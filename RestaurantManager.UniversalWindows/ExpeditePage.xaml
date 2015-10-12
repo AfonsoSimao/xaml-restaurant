@@ -6,6 +6,11 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.TopAppBar>
+        <AppBar HorizontalContentAlignment="Left" VerticalAlignment="Top" ClosedDisplayMode="Minimal">
+            <AppBarButton Icon="Home" Label="Home" HorizontalAlignment="Left" Click="AppBarButton_Click"/>
+        </AppBar>
+    </Page.TopAppBar>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
 
@@ -15,6 +20,7 @@
         </Grid.RowDefinitions>
 
         <Button Content="Clear All Orders" Grid.Row="1" Style="{StaticResource CenteredButton}"/>
+        <GridView x:Name="gridView" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
     </Grid>
 </Page>

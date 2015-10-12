@@ -21,8 +21,8 @@
         <TextBlock Text="Restaurant Manager" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
         <TextBlock Text="Internal Test Version" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18"/>
 
-        <Button Grid.Row="2" Grid.Column="0" Content="Go to Orders View" Style="{StaticResource CenteredButton}"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="Submit Order" Style="{StaticResource CenteredButton}" />
+        <Button Grid.Row="2" Grid.Column="0" Content="Go to Orders View" Style="{StaticResource CenteredButton}" Click="Button_Click"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="Submit Order" Style="{StaticResource CenteredButton}" Click="Button_Click_1" />
 
     </Grid>
 </Page>
