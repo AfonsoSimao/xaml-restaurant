@@ -3,13 +3,14 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager.UniversalWindows"
+    xmlns:models="using:RestaurantManager.Models"
     RequestedTheme="Dark">
 
     <Application.Resources>
         
         <!-- Styles that define a 'x:Key' will only apply to controls of its 'TargetType' that also define their style as the 'x:Key' -->
         <Style TargetType="Button" x:Key="BaseButton">
-            <Setter Property="FontSize" Value="28" />
+            <Setter Property="FontSize" Value="32" />
         </Style>
 
         <!-- This style is used to have the 'BaseButton' style apply to ALL buttons. -->
@@ -23,6 +24,11 @@
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="32" />
         </Style>
+        
+        <!-- End Styles-->
+
+        <models:DataManager x:Key="DataManager"/>
+
     </Application.Resources>
 
 

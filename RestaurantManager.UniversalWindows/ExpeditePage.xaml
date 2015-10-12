@@ -20,7 +20,8 @@
         </Grid.RowDefinitions>
 
         <Button Content="Clear All Orders" Grid.Row="1" Style="{StaticResource CenteredButton}"/>
-        <GridView x:Name="gridView" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <GridView x:Name="gridView" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DataContext="{StaticResource DataManager}" ItemsSource="{Binding OrderItems}"/>
+
 
     </Grid>
 </Page>
